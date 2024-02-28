@@ -4,15 +4,17 @@
  *
  * @format
  */
-
-import React from 'react';
-import {Text, View} from 'react-native';
+import "react-native-gesture-handler";
+import React from "react";
+import {Text, View} from "react-native";
+import {NavigationContainer} from "@react-navigation/native";
+import {StackNavigator} from "./presentation/routes/StackNavigator";
 
 function App(): React.JSX.Element {
   return (
-    <View>
-      <Text>hola mundo</Text>
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 }
 
